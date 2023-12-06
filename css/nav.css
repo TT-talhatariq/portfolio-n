@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(252, 249, 246);
+}
+
+.nav {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
+}
+
+.nav h1 {
+  font-size: 30px;
+  font-family: cursive;
+}
+.nav ul {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav a:hover {
+  color: red;
+  transition: all 0.5s;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+@media all and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
